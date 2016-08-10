@@ -3,7 +3,6 @@ package come.techzone.firstWebProject.WebProject.model;
 import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.*;
 
 @XmlRootElement
 public class Message {

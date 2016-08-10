@@ -11,11 +11,11 @@ public class MessageService {
 	
 	public MessageService()
 	{
-		Message m1 = new Message(1,"First Message","Prashant");
-		Message m2 = new Message(2,"Second Message","Ashish");
-		
-		messages.put(m1.getId(), m1);
-		messages.put(m2.getId(), m2);
+//		Message m1 = new Message(1,"First Message","Prashant");
+//		Message m2 = new Message(2,"Second Message","Ashish");
+//		
+//		messages.put(m1.getId(), m1);
+//		messages.put(m2.getId(), m2);
 	}
 	
 	public ArrayList<Message> getAllMessages()
@@ -37,7 +37,7 @@ public class MessageService {
 	
 	public Message updateMessage(Message updatedMessaegObj){
 		
-		if( updatedMessaegObj.getId() <= 0)
+		if( updatedMessaegObj.getId() > messages.size() )
 		{
 			return null;
 		}
